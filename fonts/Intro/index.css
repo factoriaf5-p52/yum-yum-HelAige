@@ -18,6 +18,9 @@
 #basquet {
     display: none;
 }
+header p {
+    color: dimgray;
+}
 header label {
     display: none;
     width: 40px;
@@ -65,9 +68,34 @@ label img {
 
     .menu li {
         border-top: 1px solid rgba(247, 123, 41, 0.925);
+        background-color: white;
     }
 
     #btn-menu:checked ~ .menu {
         margin: 0;
     }
+}
+
+.how-works {
+    background-color: aquamarine;
+}
+.how-works li {
+    display: inline-flex;
+    padding: 20px;
+}
+.how-works img {
+    height: 100px;
+}
+.how-works p {
+    margin-left: 15px;
+}
+
+.features {
+    background-color: chartreuse;
+}
+.features li {
+    display: inline-flex;
+}
+.features img {
+    height: 100px;
 }

@@ -12,6 +12,7 @@
     font-weight: 900;
     font-style: normal;
 }
+
 #btn-menu {
     display: none;
 }
@@ -75,6 +76,18 @@ label img {
         margin: 0;
     }
 }
+
+aside {
+    background: linear-gradient(to bottom rgb(93, 255, 53), rgb(0, 168, 0));
+    width: 0;
+    display: list-item;
+
+}
+form label {
+    display:flex;
+}
+
+
 
 .how-works {
     background-color: aquamarine;

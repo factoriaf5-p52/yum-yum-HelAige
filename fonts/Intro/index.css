@@ -13,6 +13,10 @@
     font-style: normal;
 }
 
+* {
+    font-family: 'Intro';
+}
+
 #btn-menu {
     display: none;
 }
@@ -77,38 +81,102 @@ label img {
     }
 }
 
-aside {
-    background: linear-gradient(to bottom rgb(93, 255, 53), rgb(0, 168, 0));
-    width: 0;
+.form {
+    display: flex;
+    flex-wrap: wrap;
+}
+.form img {
+    width: 500px;
+}
+form {
+    width: 500px;
+    background-color: rgb(0, 168, 0);
+}
+form p {
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    /* display: flex;
+     */
+}
+form input {
     display: list-item;
-
+    height: 40px;
+    margin-bottom: 5px;
 }
-form label {
-    display:flex;
+#submit {
+    color: white;
+    background-color: rgba(247, 123, 41, 0.925);
 }
-
-
 
 .how-works {
     background-color: aquamarine;
+    display: flex;
+    width: 500px;
 }
+/* .how-works ul {
+    list-style: none;
+} */
 .how-works li {
-    display: inline-flex;
+    list-style: none;
+    width: 80px;
     padding: 20px;
+    margin-left: 5px;
+
 }
 .how-works img {
     height: 100px;
+    align-items: center;
+}
+.how-works h1 {
+    font-size: 20px;
+
 }
 .how-works p {
-    margin-left: 15px;
+    text-align: justify;
 }
 
 .features {
+    width: 500px;
     background-color: chartreuse;
+    display: flex;
 }
 .features li {
-    display: inline-flex;
+    list-style: none;
 }
 .features img {
-    height: 100px;
+    height: 90px;
+}
+
+.cuisine {
+    background-color: coral;
+    width: 500px;
+}
+
+.banner {
+    width: 500px;
+    background-color: grey;
+    color: white;
+    padding: 50px;
+}
+
+.restaurant {
+    width: 500px;
+    background-color: blueviolet;
+}
+
+.about-us {
+    width: 500px;
+    background-color: darkolivegreen;
+}
+.about-us table {
+    border-collapse: separate;
+}
+.about-us th td {
+    text-align: left;
+}
+
+footer {
+    width: 500px;
+    background-color: rgba(247, 123, 41, 0.925);
 }

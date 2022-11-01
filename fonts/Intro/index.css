@@ -141,6 +141,7 @@ form input {
 }
 .how-works img {
     height: 80px;
+    justify-content: center;
     /* align-items: center; */
     /* position: relative; */
     
@@ -156,16 +157,21 @@ form input {
 }
 
 .features {
-    width: 100%;
-    background-color: chartreuse;
-    display: inline-flex;
+    background: linear-gradient(rgba(247, 115, 28, 0.795), rgba(245, 27, 75, 0.849));
+}
+.features ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
 }
 .features li {
     list-style: none;
+    justify-content: center;
 }
 .features img {
-    height: 90px;
+    height: 80px;
 }
+
 
 .cuisine {
     background-color: coral;

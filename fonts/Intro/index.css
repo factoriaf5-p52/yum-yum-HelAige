@@ -23,6 +23,10 @@
 #basquet {
     display: none;
 }
+header {
+    display: flex;
+    justify-content: space-between;
+}
 header p {
     color: dimgray;
 }
@@ -57,15 +61,14 @@ label img {
     text-decoration: none;
 }
 
-
 @media (max-width: 655px) {
     header label {
-        display: block;
+        display: inline-block;
     }
     .menu {
         position: absolute;
-        width: 70%;
-        margin-left: -70%;
+        width: 60%;
+        right: -400px;
     }
     .menu ul {
         flex-direction: column;
@@ -75,9 +78,9 @@ label img {
         border-top: 1px solid rgba(247, 123, 41, 0.925);
         background-color: white;
     }
-
     #btn-menu:checked ~ .menu {
         margin: 0;
+        right: 0;
     }
 }
 
@@ -86,60 +89,76 @@ label img {
     flex-wrap: wrap;
 }
 .form img {
-    width: 500px;
+    width: 100%;
 }
 form {
-    width: 500px;
-    background-color: rgb(0, 168, 0);
+    background: linear-gradient(rgba(181, 255, 45, 0.849), rgba(54, 233, 30, 0.822));
 }
 form p {
     color: white;
     font-size: 40px;
     font-weight: 900;
-    /* display: flex;
-     */
+    text-align: center;
 }
 form input {
     display: list-item;
+    text-align: center;
+    width: 250px;
     height: 40px;
     margin-bottom: 5px;
+    margin-left: 70px;
+    font-size: larger;
 }
 #submit {
     color: white;
+    border: none;
     background-color: rgba(247, 123, 41, 0.925);
+    width: 150px;
+    border-radius: 10% 10%;
 }
 
 .how-works {
     background-color: aquamarine;
-    display: flex;
-    width: 500px;
+    /* display: flex;
+    width: 500px; */
 }
-/* .how-works ul {
-    list-style: none;
-} */
+.how-works h1 {
+    font-size: 40px;
+    font-weight: 900;
+    color: rgba(247, 123, 41, 0.925);
+    text-align: center;
+}
+.how-works ul {
+    display: flex;
+}
+
 .how-works li {
+    display: flex;
     list-style: none;
-    width: 80px;
-    padding: 20px;
-    margin-left: 5px;
+    padding: 10px;
+    gap: 20px;
 
 }
 .how-works img {
-    height: 100px;
-    align-items: center;
+    height: 80px;
+    /* align-items: center; */
+    /* position: relative; */
+    
 }
-.how-works h1 {
-    font-size: 20px;
 
+.how-works h2 {
+    font-size: 20px;
+    margin: 0;
 }
 .how-works p {
-    text-align: justify;
+    overflow-wrap: break-word;
+    font-size: small;
 }
 
 .features {
-    width: 500px;
+    width: 100%;
     background-color: chartreuse;
-    display: flex;
+    display: inline-flex;
 }
 .features li {
     list-style: none;
@@ -150,23 +169,24 @@ form input {
 
 .cuisine {
     background-color: coral;
-    width: 500px;
+    /* width: 500px; */
 }
 
 .banner {
-    width: 500px;
+    /* width: 500px; */
     background-color: grey;
     color: white;
     padding: 50px;
 }
 
 .restaurant {
-    width: 500px;
+    /* width: 500px; */
     background-color: blueviolet;
 }
 
 .about-us {
-    width: 500px;
+    display: flex;
+    /* width: 500px; */
     background-color: darkolivegreen;
 }
 .about-us table {
@@ -177,6 +197,16 @@ form input {
 }
 
 footer {
-    width: 500px;
+    width: 100%;
     background-color: rgba(247, 123, 41, 0.925);
+    align-content: space-between;
 }
+footer section {
+    display: inline-flex;
+    float: right;
+}
+footer section p {
+    margin-left: 20px;
+}
+    
+    

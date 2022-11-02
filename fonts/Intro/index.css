@@ -92,6 +92,7 @@ label img {
     width: 100%;
 }
 form {
+    display: flex;
     background: linear-gradient(rgba(181, 255, 45, 0.849), rgba(54, 233, 30, 0.822));
 }
 form p {
@@ -152,7 +153,7 @@ form input {
     margin: 0;
 }
 .how-works p {
-    overflow-wrap: break-word;
+    color: dimgray;
     font-size: small;
 }
 
@@ -163,13 +164,18 @@ form input {
     display: flex;
     flex-direction: row;
     gap: 30px;
+    padding: 50px;
 }
 .features li {
     list-style: none;
     justify-content: center;
+
 }
 .features img {
-    height: 80px;
+    height: 70px;
+    padding: 23px;
+    background-color: white;
+    border-radius: 50%;
 }
 
 

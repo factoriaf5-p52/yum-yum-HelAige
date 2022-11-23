@@ -9,7 +9,9 @@
 
 </head>
 <body>
-<!--HEADER-->
+
+<!---------------HEADER---------------->
+
 <header>
     <div>
         <img src="/images/logo.svg" alt="logo de la empresa">
@@ -39,10 +41,14 @@
         <img src="/gris.jpg" alt="grey image">
         <form action="" class="contact">
             <p>ORDER FROM RESTAURANTS AROUND YOU</p>
-            <label for="address"><img src="/images/pin.svg" /></label>
-            <input type="text" id="address" name="address" placeholder="Enter your adress">
-            <label for="want"><img src="/images/bbq.svg" /></label>
-            <input type="text" id="want" name="want" placeholder="What would you want?">
+            <div class="where">
+                <label for="address"><img src="/images/pin.svg" /></label>
+                <input type="text" id="address" name="address" placeholder="Enter your adress">
+            </div>
+            <div class="what">
+                <label for="want"><img src="/images/bbq.svg" /></label>
+                <input type="text" id="want" name="want" placeholder="What would you want?">
+            </div>
             <input type="submit" id="submit" value="FIND A FOOD">
         </form>
     </section>
